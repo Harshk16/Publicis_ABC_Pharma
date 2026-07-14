@@ -1,0 +1,40 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.red-row td {
+  background-color: red !important;
+  color: #842029 !important;
+}
+
+.yellow-row td {
+  background-color: yellow !important;
+  color: #664d03 !important;
+}
+
+.error-toast {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.success-toast {
+  background-color: #388e3c;
+  color: #fff;
+}
+
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+
+

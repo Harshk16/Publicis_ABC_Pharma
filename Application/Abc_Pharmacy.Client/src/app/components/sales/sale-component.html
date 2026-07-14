@@ -1,0 +1,28 @@
+<div class="p-4">
+<h2>Sales Records</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Medicine</th>
+      <th>Brand</th>
+      <th>Quantity Sold</th>
+      <th>Unit Price</th>
+      <th>Total Price</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sale of sales">
+      <td>{{ sale.id }}</td>
+      <td>{{ sale.fullName }}</td>
+      <td>{{ sale.brand }}</td>
+      <td>{{ sale.quantitySold }}</td>
+      <td>{{ sale.unitPrice | currency:'INR' }}</td>
+      <td>{{ sale.totalPrice | currency:'INR' }}</td>
+      <td>{{ sale.saleDate | date:'short' }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
