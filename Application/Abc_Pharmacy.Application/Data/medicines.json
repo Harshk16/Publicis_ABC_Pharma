@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 2,
+    "FullName": "Paracetamol 500mg",
+    "ExpiryDate": "2026-07-28T00:00:00",
+    "Quantity": 90,
+    "Price": 200,
+    "Brand": "MediCare",
+    "Notes": "Generic Medicine",
+    "IsActive": true
+  },
+  {
+    "Id": 3,
+    "FullName": "Amoxicillin 250mg",
+    "ExpiryDate": "2026-07-18T00:00:00",
+    "Quantity": 200,
+    "Price": 100,
+    "Brand": "Pharma pLus",
+    "Notes": "Cold Medicne",
+    "IsActive": true
+  },
+  {
+    "Id": 4,
+    "FullName": "Warf 5",
+    "ExpiryDate": "2026-07-17T00:00:00",
+    "Quantity": 4,
+    "Price": 10,
+    "Brand": "Cipla",
+    "Notes": "Heart Medicine",
+    "IsActive": true
+  },
+  {
+    "Id": 5,
+    "FullName": "Corex",
+    "ExpiryDate": "2026-07-14T00:00:00",
+    "Quantity": 0,
+    "Price": 50,
+    "Brand": "Cipla",
+    "Notes": "Cough Syrup",
+    "IsActive": true
+  },
+  {
+    "Id": 6,
+    "FullName": "Lemolate",
+    "ExpiryDate": "2026-07-16T00:00:00",
+    "Quantity": 9,
+    "Price": 1,
+    "Brand": "Torrent",
+    "Notes": "Cough Relief",
+    "IsActive": true
+  },
+  {
+    "Id": 7,
+    "FullName": "Test Med",
+    "ExpiryDate": "2026-08-21T00:00:00",
+    "Quantity": 15,
+    "Price": 75,
+    "Brand": "Cipla",
+    "Notes": "Tes Medicine",
+    "IsActive": true
+  },
+  {
+    "Id": 8,
+    "FullName": "Metformin",
+    "ExpiryDate": "2026-08-15T00:00:00",
+    "Quantity": 11,
+    "Price": 150,
+    "Brand": "Glucophage",
+    "Notes": "Type 2 Diabetes",
+    "IsActive": true
+  },
+  {
+    "Id": 9,
+    "FullName": "Pan D",
+    "ExpiryDate": "2026-08-28T00:00:00",
+    "Quantity": 11,
+    "Price": 220,
+    "Brand": "Cipla",
+    "Notes": "Acidit",
+    "IsActive": true
+  }
+]

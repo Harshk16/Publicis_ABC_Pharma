@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 1,
+    "TotalPrice": 200,
+    "SaleDate": "2026-07-14T10:57:02.9905959Z"
+  },
+  {
+    "Id": 2,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 1,
+    "TotalPrice": 200,
+    "SaleDate": "2026-07-14T10:58:16.7435551Z"
+  },
+  {
+    "Id": 3,
+    "MedicineId": 4,
+    "FullName": "Warf 5",
+    "Brand": "Cipla",
+    "UnitPrice": 10,
+    "QuantitySold": 1,
+    "TotalPrice": 10,
+    "SaleDate": "2026-07-14T11:07:13.6694584Z"
+  },
+  {
+    "Id": 4,
+    "MedicineId": 6,
+    "FullName": "Lemolate",
+    "Brand": "Torrent",
+    "UnitPrice": 1,
+    "QuantitySold": 1,
+    "TotalPrice": 1,
+    "SaleDate": "2026-07-14T14:17:14.4437552Z"
+  },
+  {
+    "Id": 5,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 2,
+    "TotalPrice": 400,
+    "SaleDate": "2026-07-14T14:27:52.8382424Z"
+  },
+  {
+    "Id": 6,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 2,
+    "TotalPrice": 400,
+    "SaleDate": "2026-07-14T15:41:29.758821Z"
+  },
+  {
+    "Id": 7,
+    "MedicineId": 5,
+    "FullName": "Corex",
+    "Brand": "Cipla",
+    "UnitPrice": 50,
+    "QuantitySold": 1,
+    "TotalPrice": 50,
+    "SaleDate": "2026-07-14T15:48:59.7649926Z"
+  },
+  {
+    "Id": 8,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 1,
+    "TotalPrice": 200,
+    "SaleDate": "2026-07-14T15:55:51.58123Z"
+  },
+  {
+    "Id": 9,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 2,
+    "TotalPrice": 400,
+    "SaleDate": "2026-07-14T15:55:58.442018Z"
+  }
+]
