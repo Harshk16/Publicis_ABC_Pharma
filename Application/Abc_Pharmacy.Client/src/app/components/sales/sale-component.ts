@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
-import { SaleRecord } from '../../interfaces/sales-record';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { ApiService } from '../../services/api-service';
 
 @Component({
@@ -10,10 +9,9 @@ import { ApiService } from '../../services/api-service';
   styleUrl: './sale-component.scss',
 })
 export class SaleComponent implements OnInit {
-  sales: SaleRecord[] = [];
+   sales = signal<any[]>([]);
 
   private apiService = inject(ApiService);
-  private cdr = inject(ChangeDetectorRef);
 
   ngOnInit(): void {
     this.loadSales();
@@ -22,10 +20,10 @@ export class SaleComponent implements OnInit {
   loadSales(): void {
     this.apiService.getSales().subscribe({
       next: (data) => {
-        this.sales = data;
+        var res = data;
         console.log('Sales data loaded into array:', this.sales);
         
-        this.cdr.detectChanges(); 
+        this.sales.set(res);
       },
       error: (err) => {
         console.error('Failed to fetch sales records', err);

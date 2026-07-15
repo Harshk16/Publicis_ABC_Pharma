@@ -17,9 +17,9 @@
             class="form-control" 
             placeholder="Search by name" 
             [(ngModel)]="searchQuery"
-            (input)="onSearchChange()" 
+             (ngModelChange)="searchQuery.set($event); onSearchChange()"  
           />
-          @if (searchQuery) {
+          @if (searchQuery()) {
             <button class="btn btn-outline-secondary" type="button" (click)="clearSearch()">Clear</button>
           }
         </div>
@@ -96,7 +96,7 @@
       </tr>
     </thead>
     <tbody>
-      @for (med of medicines; track med.id) {
+      @for (med of medicines(); track med.id) {
         <tr [class.red-row]="med.isExpiring"
             [class.yellow-row]="med.quantity < 10">
           <td>{{ med.fullName }}</td>

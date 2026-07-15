@@ -88,5 +88,15 @@
     "QuantitySold": 2,
     "TotalPrice": 400,
     "SaleDate": "2026-07-14T15:55:58.442018Z"
+  },
+  {
+    "Id": 10,
+    "MedicineId": 2,
+    "FullName": "Paracetamol 500mg",
+    "Brand": "MediCare",
+    "UnitPrice": 200,
+    "QuantitySold": 2,
+    "TotalPrice": 400,
+    "SaleDate": "2026-07-15T07:55:06.9978572Z"
   }
 ]

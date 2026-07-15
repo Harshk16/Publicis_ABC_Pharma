@@ -2,8 +2,6 @@ import { ChangeDetectorRef, Component, OnInit, ViewEncapsulation, inject, signal
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { DestroyRef } from '@angular/core';
 import { AddMedicine } from '../../interfaces/add-medicine';
 import { Medicine } from '../../interfaces/medicine';
 import { ApiService } from '../../services/api-service';
@@ -18,10 +16,12 @@ import { ApiService } from '../../services/api-service';
   encapsulation: ViewEncapsulation.None
 })
 export class MedicineComponent implements OnInit {
-  medicines: Medicine[] = [];
+
+  medicines = signal<any[]>([]);
   newMedicineForm: FormGroup;
   errorMessage: string | null = null;
-  searchQuery: string = '';
+
+  searchQuery = signal<string>('');
 
   private cdr = inject(ChangeDetectorRef)
 
@@ -45,7 +45,7 @@ export class MedicineComponent implements OnInit {
   }
 
   onSearchChange(): void {
-    const query = this.searchQuery.trim();
+    const query = this.searchQuery().trim();
 
     if (query.length >= 3 || query.length === 0) {
       this.getMedicines();
@@ -53,20 +53,20 @@ export class MedicineComponent implements OnInit {
   }
 
   clearSearch(): void {
-    this.searchQuery = '';
+    this.searchQuery.set('');
     this.getMedicines();
-      this.cdr.detectChanges();
   }
 
   getMedicines(): void {
-    this.apiService.getMedicines(this.searchQuery).subscribe({
+    this.apiService.getMedicines(this.searchQuery()).subscribe({
       next: meds => {
-        this.medicines = meds.map(med => ({
+
+        const data = meds.map(med => ({
           ...med,
           isExpiring: this.checkExpiryStatus(med.expiryDate)
         }));
 
-        this.cdr.detectChanges();
+        this.medicines.set(data);
       },
       error: err => {
         console.error('Failed to load medicines', err);
