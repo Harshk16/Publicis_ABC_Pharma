@@ -26,6 +26,7 @@ namespace Abc_Pharmacy.Web.Api.Controllers.Sales
         public async Task<IActionResult> Get()
         {
             var result = await Mediator.Send(new GetSalesQuery());
+
             return Ok(result);
         }
 
